@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shopp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+    <div class="shop-head">Elevate your wardrobe game with Clothify's chic collections</div>
+    <button class="pre-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <div class="product-container">
+        <div id="product-card" data-id="2">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="img/slider-1.webp" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <div class="price">$20</div>
+                <div class="actual_price">$40</div>
+            </div>
+        </div>
+    </div>
+    <section class="collection-container">
+        <a href="#" class="collection">
+            <img src="img/wa.jpg" alt="">
+            <p class="collection-title">women <br> apparels</p>
+        </a>
+        <a href="#" class="collection">
+            <img src="img/ma.jpg" alt="">
+            <p class="collection-title">men <br> apparels</p>
+        </a>
+    </section>
+    <p id="women_head">Women Section</p>
+    <div class="wc_sec">
+        <div class="wc">
+            <div class="wc_name">calvin klein</div>
+            <div class="wc_des">Blooming Jelly Women's Dressy Casual Tops Business Work Blouses White Button Down Shirts
+                Cap
+                Sleeve V Neck Tshirt</div>
+            <img src="img/img-1.jpg" id="wc1">
+            <button class="card-btn"data-id="1" data-name="calvin klein" data-price="20">add to cart</button>
+        </div>
+    </div>
+
+    <p id="men_head">Men Section</p>
+    <div class="mc_sec">
+        <div class="mc">
+            <div class="mc_name">COOFANDY</div>
+            <div class="mc_des">Men's Linen Shirts Short Sleeve Casual Shirts Button Down</div>
+            <img src="img/ma1.jpg" id="mc1">
+            <button class="card-btn">add to cart</button>
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

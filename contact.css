@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+}
+
+body {
+    background-color: #00171F;
+}
+
+.navbar h1 {
+    color: #00171F;
+    font-family: Georgia;
+    font-size: 4rem;
+    margin-left: 19rem;
+}
+
+.navbar {
+    display: flex;
+    background-color: #A26769;
+    padding: 1rem;
+    align-items: center;
+}
+
+.navbar i {
+    font-size: 2rem;
+    color: #00171F;
+}
+
+.i-tags {
+    margin-left: 15rem;
+}
+
+
+.connect {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#con-head {
+    font-size: 3.4rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+#con-conclude {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.connect #con-text {
+    border-radius: 1rem;
+    font-size: 2.8rem;
+    color: #A26769;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    animation: slide 7s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -4rem;
+    }
+
+    50% {
+        top: -8rem;
+    }
+
+    72.5% {
+        top: -12.25rem;
+    }
+}
+
+.main-head {
+    padding: 7rem;
+}
+
+.endtags{
+    display:flex;
+    justify-content: space-evenly;
+  }
+  #tag{
+    text-decoration: none;
+    font-size:1.5rem;
+    border:3px solid #A26769;
+    margin-top:7rem;
+    padding:1rem;
+    border-radius:2rem;
+    color:#D8CBC7;
+  }
+
+  #tag:hover {
+    color:cornflowerblue;
+    filter:drop-shadow(1px 1px 1px #D8CBC7);
+  }

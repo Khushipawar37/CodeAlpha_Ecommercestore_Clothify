@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #0D0C1D;
+}
+
+.sign_head{
+    font-family: Georgia;
+    font-size:3.5rem;
+    text-align: center;
+    color:#A26769;
+    animation: lights 4s 800ms linear infinite;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom:10px;
+    margin-top:30px;
+    border: none;
+    outline: none;
+    margin-left:450px;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    font-family: 'roboto', sans-serif;
+}
+
+::placeholder{
+    color: #383838;
+}
+
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #A26769;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left:450px;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+/* checkbox styles */
+
+.checkbox{
+    position: relative;
+    margin-left:450px;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #383838;
+    cursor: pointer;
+}
+
+.checkbox:checked{
+    background: #383838;
+}
+
+.checkbox::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(../img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkbox:checked::after{
+    display: block;
+}
+
+label{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+label a{
+    color: #fff;
+}
+
+.link{
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}

@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFF8F0;
+    padding: 0;
+}
+
+.shop-head {
+    font-family: Georgia;
+    font-size: 3.5rem;
+    color: #A26769;
+    padding: 2rem;
+}
+.product-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 90px;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+#product-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 150px;
+    height: 250px;
+    background-color: #0D0C1D;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.product-image {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: opacity 0.5s, visibility 0.5s;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#product-card:hover .card-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-btn:hover {
+    background: #efefef;
+}
+
+.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.product-short-des {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+    color: #A26769;
+}
+
+.actual_price {
+    color: #A26769;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-left: 20px;
+    opacity: 1;
+    text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    font-size: 2rem;
+    color: #A26769;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn i,
+.nxt-btn i {
+    opacity: 0.2;
+}
+
+.pre-btn:hover i,
+.nxt-btn:hover i {
+    opacity: 1;
+}
+
+.collection-container {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-gap: 100px;
+    position: relative;
+    margin-top: 70px;
+    left: 300px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+#women_head, #men_head {
+    color: #A26769;
+    font-size: 3.5rem;
+    padding: 2rem;
+    align-items: center;
+    font-family: Georgia;
+}
+.wc:hover .card-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.mc:hover .card-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.wc_sec, .mc_sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%; 
+}
+.wc, .mc {
+    color: #efefef;
+    background-color: #0D0C1D;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%; 
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.wc_name, .mc_name {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.wc_des, .mc_des {
+    margin-bottom: 10px;
+}
+
+.wc_size, .mc_size {
+    margin-top: 10px;
+}
+
+#wc1, #mc1 {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
